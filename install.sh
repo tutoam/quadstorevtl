@@ -1,5 +1,5 @@
 dnf update 
-dnf install -y sssd realmd oddjob oddjob-mkhomedir adcli samba-common samba-common-tools krb5-workstation openldap-clients policycoreutils-python* 
+dnf -y install  sssd realmd oddjob oddjob-mkhomedir adcli samba-common samba-common-tools krb5-workstation openldap-clients policycoreutils-python* 
 dnf install -y httpd
 systemctl enable httpd --now 
  firewall-cmd --add-service http --permanent 
